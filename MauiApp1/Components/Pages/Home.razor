@@ -1,15 +1,17 @@
 ﻿@page "/"
-@using System.Timers
 
 <h1 role="clock"> @currentTime</h1>
+<p role="record"> Record: @record</p>
 
 <button class="btn start" @onclick="startTimer">Start Timer</button>
 <button class="btn stop" @onclick="stopTimer">Stop Timer</button>
 <button class="btn reset" @onclick="resetTimer">Reset Timer</button>
+<button class="btn finish" @onclick="finish">Finish</button>
 
 @code {
     private Stopwatch stopwatch = new Stopwatch();
     private string currentTime = "00:00:00:000";
+    private string record = Preferences.Default.Get<string>("record1", "None");
     private System.Timers.Timer aTimer = new System.Timers.Timer(10);
 
     private void startTimer()
@@ -36,5 +38,12 @@
     {
         stopwatch.Reset();
         currentTime = "00:00:00:000";
+    }
+
+    private void finish()
+    {
+        record = currentTime;
+        Preferences.Default.Set("record1", record);
+        resetTimer();
     }
 }
