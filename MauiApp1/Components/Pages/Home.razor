@@ -1,5 +1,40 @@
 ﻿@page "/"
+@using System.Timers
 
-<h1>Hello, world!</h1>
+<h1 role="clock"> @currentTime</h1>
 
-Welcome to your new app.
+<button class="btn start" @onclick="startTimer">Start Timer</button>
+<button class="btn stop" @onclick="stopTimer">Stop Timer</button>
+<button class="btn reset" @onclick="resetTimer">Reset Timer</button>
+
+@code {
+    private Stopwatch stopwatch = new Stopwatch();
+    private string currentTime = "00:00:00:000";
+    private System.Timers.Timer aTimer = new System.Timers.Timer(10);
+
+    private void startTimer()
+    {
+        aTimer.Elapsed += new System.Timers.ElapsedEventHandler(timerElapsed);
+        aTimer.AutoReset = true;
+        aTimer.Enabled = true;
+
+        stopwatch.Start();
+    }
+
+    private async void timerElapsed(Object? source, System.Timers.ElapsedEventArgs e)
+    {
+        currentTime = stopwatch.Elapsed.ToString(@"hh\:mm\:ss\:fff");
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private void stopTimer()
+    {
+        stopwatch.Stop();
+    }
+
+    private void resetTimer()
+    {
+        stopwatch.Reset();
+        currentTime = "00:00:00:000";
+    }
+}
