@@ -5,8 +5,9 @@
 
 <button class="btn start" @onclick="startTimer">Start Timer</button>
 <button class="btn stop" @onclick="stopTimer">Stop Timer</button>
-<button class="btn reset" @onclick="resetTimer">Reset Timer</button>
+<button class="btn reset" @onclick="restartTimer">Restart Timer</button>
 <button class="btn finish" @onclick="finish">Finish</button>
+<button class="btn finish" @onclick="resetRecord">Reset Record</button>
 
 @code {
     private Stopwatch stopwatch = new Stopwatch();
@@ -25,7 +26,7 @@
 
     private async void timerElapsed(Object? source, System.Timers.ElapsedEventArgs e)
     {
-        currentTime = stopwatch.Elapsed.ToString(@"hh\:mm\:ss\:fff");
+        currentTime = stopwatch.Elapsed.ToString(@"hh\:mm\:ss\.fff");
         await InvokeAsync(StateHasChanged);
     }
 
@@ -34,7 +35,7 @@
         stopwatch.Stop();
     }
 
-    private void resetTimer()
+    private void restartTimer()
     {
         stopwatch.Reset();
         currentTime = "00:00:00:000";
@@ -42,8 +43,17 @@
 
     private void finish()
     {
-        record = currentTime;
+        if (record == "None" || TimeSpan.ParseExact(currentTime, "hh\\:mm\\:ss\\.fff", System.Globalization.CultureInfo.InvariantCulture) < TimeSpan.ParseExact(record, "hh\\:mm\\:ss\\.fff", System.Globalization.CultureInfo.InvariantCulture))
+        {
+            record = currentTime;
+            Preferences.Default.Set("record1", record);
+        }
+        restartTimer();
+    }
+
+    private void resetRecord()
+    {
+        record = "None";
         Preferences.Default.Set("record1", record);
-        resetTimer();
     }
 }
