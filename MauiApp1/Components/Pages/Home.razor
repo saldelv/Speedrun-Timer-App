@@ -3,17 +3,39 @@
 <h1 role="clock"> @currentTime</h1>
 <p role="record"> Record: @record</p>
 
+@if (splitsList == null)
+{
+    <p><em>No splits</em></p>
+}
+else
+{
+    @foreach (var split in splitsList)
+    {
+        <h2>@split.Name</h2>
+        <p>@split.Record</p>
+        @if (@split.Time != "")
+        {
+            <p>@split.Time</p>
+        }
+    }
+}
+
 <button class="btn start" @onclick="startTimer">Start Timer</button>
 <button class="btn stop" @onclick="stopTimer">Stop Timer</button>
-<button class="btn reset" @onclick="restartTimer">Restart Timer</button>
+<button class="btn restart" @onclick="restartTimer">Restart Timer</button>
 <button class="btn finish" @onclick="finish">Finish</button>
-<button class="btn finish" @onclick="resetRecord">Reset Record</button>
+<button class="btn reset" @onclick="resetRecord">Reset Record</button>
+
+<button class="btn add split" @onclick="addSplit">Add New Split</button>
+<button class="btn split timer" @onclick="splitTimer">Split Timer</button>
 
 @code {
     private Stopwatch stopwatch = new Stopwatch();
     private string currentTime = "00:00:00:000";
     private string record = Preferences.Default.Get<string>("record1", "None");
     private System.Timers.Timer aTimer = new System.Timers.Timer(10);
+
+    private Splits[]? splitsList;
 
     private void startTimer()
     {
@@ -55,5 +77,23 @@
     {
         record = "None";
         Preferences.Default.Set("record1", record);
+    }
+
+    private void addSplit()
+    {
+        /////////////////////////////////////////////////////////////////////////////
+    }
+
+    private void splitTimer()
+    {
+        /////////////////////////////////////////////////////////////////////////////
+    }
+
+    private class Splits
+    {
+        public int Order { get; set; }
+        public string? Time { get; set; }
+        public string? Record { get; set; }
+        public string? Name { get; set; }
     }
 }
