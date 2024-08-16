@@ -12,7 +12,7 @@ else
     @foreach (var split in splitsList)
     {
         <h4>@split.Name</h4>
-        <p>@split.Record</p>
+        <p>Record: @split.Record</p>
         @if (@split.Time != "")
         {
             <p>@split.Time</p>
@@ -37,8 +37,10 @@ else
     private string record = Preferences.Default.Get<string>("record1", "None");
     private System.Timers.Timer aTimer = new System.Timers.Timer(10);
 
+
     private List<Split> splitsList = new List<Split>();
     private int splitIndex;
+    private int nextSplit = 0;
 
     private void startTimer()
     {
@@ -64,6 +66,11 @@ else
     {
         stopwatch.Reset();
         currentTime = "00:00:00:000";
+        nextSplit = 0;
+        for (int i = 0; i < splitsList.Count; i++)
+        {
+            splitsList[i].Time = "";
+        }
     }
 
     private void finish()
@@ -105,7 +112,18 @@ else
 
     private void splitTimer()
     {
-    //
+        if (nextSplit < splitsList.Count)
+        {
+            string time = stopwatch.Elapsed.ToString(@"hh\:mm\:ss\.fff");
+            splitsList[nextSplit].Time = time;        
+
+            if (splitsList[nextSplit].Record == "None" || TimeSpan.ParseExact(time, "hh\\:mm\\:ss\\.fff", System.Globalization.CultureInfo.InvariantCulture) < TimeSpan.ParseExact(splitsList[nextSplit].Record, "hh\\:mm\\:ss\\.fff", System.Globalization.CultureInfo.InvariantCulture))
+            {
+                splitsList[nextSplit].Record = time;
+            }
+
+            nextSplit++;
+        }
     }
 
     private void deleteSplit(int index)
