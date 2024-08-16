@@ -3,7 +3,7 @@
 <h1 role="clock"> @currentTime</h1>
 <p role="record"> Record: @record</p>
 
-@if (splitsList == null)
+@if (splitsList.Count == 0)
 {
     <p><em>No splits</em></p>
 }
@@ -11,12 +11,14 @@ else
 {
     @foreach (var split in splitsList)
     {
-        <h4>@split.Order: @split.Name</h4>
+        <h4>@split.Name</h4>
         <p>@split.Record</p>
         @if (@split.Time != "")
         {
             <p>@split.Time</p>
         }
+        <button class="btn delete split" @onclick="() => deleteSplit(split.Index)">X</button>
+        splitIndex++;
     }
 }
 
@@ -35,7 +37,8 @@ else
     private string record = Preferences.Default.Get<string>("record1", "None");
     private System.Timers.Timer aTimer = new System.Timers.Timer(10);
 
-    private Split[]? splitsList;
+    private List<Split> splitsList = new List<Split>();
+    private int splitIndex;
 
     private void startTimer()
     {
@@ -83,34 +86,40 @@ else
     {
         string name = await App.Current.MainPage.DisplayPromptAsync("New Split", "Enter name:");
 
-        if (splitsList == null)
+        if (name!= null)
         {
-            splitsList = new Split[1];
-        }
-        else
-        {
-            Array.Resize(ref splitsList, splitsList.Length + 1);
-        }
-
-        splitsList[splitsList.Length - 1] = new Split
+            if (string.IsNullOrWhiteSpace(name))
             {
-                Order = splitsList.Length,
-                Time = "",
-                Record = "None",
-                Name = name
-            };
-
-        await InvokeAsync(StateHasChanged);
+                name = "New Split";
+            }
+            splitsList.Add(new Split
+                {
+                    Index = splitsList.Count,
+                    Time = "",
+                    Record = "None",
+                    Name = name
+                });
+            await InvokeAsync(StateHasChanged);
+        }   
     }
 
     private void splitTimer()
     {
-        //
+    //
+    }
+
+    private void deleteSplit(int index)
+    {
+        splitsList.RemoveAt(index);
+        for (int i = 0; i < splitsList.Count; i++)
+        {
+            splitsList[i].Index = i;
+        }
     }
 
     private class Split
     {
-        public int Order { get; set; }
+        public int Index { get; set; }
         public string? Time { get; set; }
         public string? Record { get; set; }
         public string? Name { get; set; }
