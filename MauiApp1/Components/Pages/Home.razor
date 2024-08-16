@@ -11,7 +11,7 @@ else
 {
     @foreach (var split in splitsList)
     {
-        <h2>@split.Name</h2>
+        <h4>@split.Order: @split.Name</h4>
         <p>@split.Record</p>
         @if (@split.Time != "")
         {
@@ -35,7 +35,7 @@ else
     private string record = Preferences.Default.Get<string>("record1", "None");
     private System.Timers.Timer aTimer = new System.Timers.Timer(10);
 
-    private Splits[]? splitsList;
+    private Split[]? splitsList;
 
     private void startTimer()
     {
@@ -79,17 +79,36 @@ else
         Preferences.Default.Set("record1", record);
     }
 
-    private void addSplit()
+    private async void addSplit()
     {
-        /////////////////////////////////////////////////////////////////////////////
+        string name = await App.Current.MainPage.DisplayPromptAsync("New Split", "Enter name:");
+
+        if (splitsList == null)
+        {
+            splitsList = new Split[1];
+        }
+        else
+        {
+            Array.Resize(ref splitsList, splitsList.Length + 1);
+        }
+
+        splitsList[splitsList.Length - 1] = new Split
+            {
+                Order = splitsList.Length,
+                Time = "",
+                Record = "None",
+                Name = name
+            };
+
+        await InvokeAsync(StateHasChanged);
     }
 
     private void splitTimer()
     {
-        /////////////////////////////////////////////////////////////////////////////
+        //
     }
 
-    private class Splits
+    private class Split
     {
         public int Order { get; set; }
         public string? Time { get; set; }
