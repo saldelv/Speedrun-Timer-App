@@ -1,7 +1,7 @@
 ﻿@page "/"
 
-<h1 role="clock"> @currentTime</h1>
-<p role="record"> Record: @record</p>
+<h1> @currentTime</h1>
+<p> Record: @record</p>
 
 @if (splitsList.Count == 0)
 {
@@ -38,7 +38,7 @@ else
     private System.Timers.Timer aTimer = new System.Timers.Timer(10);
 
 
-    private List<Split> splitsList = new List<Split>();
+    private List<Split> splitsList = loadDatabase();
     private int splitIndex;
     private int nextSplit = 0;
 
@@ -99,13 +99,16 @@ else
             {
                 name = "New Split";
             }
-            splitsList.Add(new Split
+            Split split = new Split
                 {
                     Index = splitsList.Count,
                     Time = "",
                     Record = "None",
                     Name = name
-                });
+                };
+
+            splitsList.Add(split);
+            saveDatabase(split);
             await InvokeAsync(StateHasChanged);
         }   
     }
@@ -129,17 +132,44 @@ else
     private void deleteSplit(int index)
     {
         splitsList.RemoveAt(index);
+        deleteDatabase();
         for (int i = 0; i < splitsList.Count; i++)
         {
             splitsList[i].Index = i;
+            saveDatabase(splitsList[i]);
         }
     }
 
-    private class Split
+    [Table("split")]
+    public class Split
     {
+        [PrimaryKey]
+        [Column("index")]
         public int Index { get; set; }
+
+        [Column("time")]
         public string? Time { get; set; }
+
+        [Column("record")]
         public string? Record { get; set; }
+
+        [Column("name")]
         public string? Name { get; set; }
+    }
+
+    private void saveDatabase(Split split)
+    {
+        App.SplitDatabase.Add(split);
+    }
+
+    private static List<Split> loadDatabase()
+    {
+        return App.SplitDatabase.GetSplits();
+    }
+
+    private void deleteDatabase()
+    {
+        App.SplitDatabase.Delete();
+
     }
 }

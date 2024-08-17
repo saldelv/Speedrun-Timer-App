@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-16T22:34:19.973</Modified>
+      <Modified>2024-08-17T23:49:09.825</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-14T19:52:01.806</Modified>
+      <Modified>2024-08-17T23:02:27.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.runtimeconfig.json">
       <PackagePath>MauiApp1.runtimeconfig.json</PackagePath>
-      <Modified>2024-08-14T19:52:01.583</Modified>
+      <Modified>2024-08-17T19:45:27.783</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.dll">
       <PackagePath>MauiApp1.dll</PackagePath>
-      <Modified>2024-08-16T22:34:19.775</Modified>
+      <Modified>2024-08-17T23:02:26.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp1.exe</PackagePath>
-      <Modified>2024-08-16T22:34:19.778</Modified>
+      <Modified>2024-08-17T23:02:26.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -301,9 +301,17 @@
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
       <Modified>2024-08-12T19:37:49.603</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlitepclraw.lib.e_sqlite3.v110_xp\1.1.5\runtimes\win7-x86\native\e_sqlite3.dll">
+      <PackagePath>x86\e_sqlite3.dll</PackagePath>
+      <Modified>2017-05-01T13:27:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlitepclraw.lib.e_sqlite3.v110_xp\1.1.5\runtimes\win7-x64\native\e_sqlite3.dll">
+      <PackagePath>x64\e_sqlite3.dll</PackagePath>
+      <Modified>2017-05-01T13:27:42.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.deps.json">
       <PackagePath>MauiApp1.deps.json</PackagePath>
-      <Modified>2024-08-14T19:52:01.492</Modified>
+      <Modified>2024-08-17T23:02:27.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -312,6 +320,14 @@
     <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-10-16T19:41:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\entityframework\6.4.4\lib\netstandard2.1\EntityFramework.SqlServer.dll">
+      <PackagePath>EntityFramework.SqlServer.dll</PackagePath>
+      <Modified>2020-04-16T20:39:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\entityframework\6.4.4\lib\netstandard2.1\EntityFramework.dll">
+      <PackagePath>EntityFramework.dll</PackagePath>
+      <Modified>2020-04-16T20:38:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\microsoft.aspnetcore.authorization\8.0.0\lib\net8.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
@@ -445,6 +461,10 @@
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2024-02-13T17:13:18.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\microsoft.win32.systemevents\4.7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
+      <Modified>2019-11-15T08:54:18.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\microsoft.windowsappsdk\1.3.230724000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
       <Modified>2023-07-21T16:44:46.000</Modified>
@@ -505,9 +525,73 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Release.Net.dll</PackagePath>
       <Modified>2023-07-24T19:10:10.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\newtonsoft.json\9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-06-13T23:06:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlite-net-pcl\1.4.118\lib\netstandard1.1\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2017-07-27T16:44:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlitenetextensions\2.1.0\lib\netstandard1.1\SQLiteNetExtensions.dll">
+      <PackagePath>SQLiteNetExtensions.dll</PackagePath>
+      <Modified>2018-08-13T22:28:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlitepclraw.bundle_green\1.1.5\lib\netcoreapp\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+      <Modified>2017-05-01T13:27:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlitepclraw.bundle_green\1.1.5\lib\netcoreapp\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2017-05-01T13:27:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlitepclraw.core\1.1.5\lib\netstandard1.1\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2017-05-01T13:27:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlitepclraw.provider.e_sqlite3.netstandard11\1.1.5\lib\netstandard1.1\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2017-05-01T13:27:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.118\lib\netstandard2.1\System.Data.SQLite.dll">
+      <PackagePath>System.Data.SQLite.dll</PackagePath>
+      <Modified>2023-06-10T21:02:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.codedom\4.7.0\lib\netstandard2.0\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
+      <Modified>2019-11-15T08:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.configuration.configurationmanager\4.7.0\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
+      <Modified>2019-11-15T08:37:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.data.sqlclient\4.8.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll">
+      <PackagePath>System.Data.SqlClient.dll</PackagePath>
+      <Modified>2020-01-17T18:41:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.data.sqlite.ef6\1.0.118\lib\netstandard2.1\System.Data.SQLite.EF6.dll">
+      <PackagePath>System.Data.SQLite.EF6.dll</PackagePath>
+      <Modified>2023-06-10T21:00:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.drawing.common\4.7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2019-11-15T08:54:20.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.io.pipelines\8.0.0\lib\net8.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
       <Modified>2023-10-31T14:59:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.security.cryptography.protecteddata\4.7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
+      <Modified>2019-11-15T08:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.security.permissions\4.7.0\lib\netcoreapp3.0\System.Security.Permissions.dll">
+      <PackagePath>System.Security.Permissions.dll</PackagePath>
+      <Modified>2019-11-15T08:56:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\system.windows.extensions\4.7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll">
+      <PackagePath>System.Windows.Extensions.dll</PackagePath>
+      <Modified>2019-11-15T08:54:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\microsoft.maui.controls.core\8.0.7\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
@@ -652,6 +736,22 @@
     <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\microsoft.windowsappsdk\1.3.230724000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2023-04-28T12:58:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\runtime.win-x64.runtime.native.system.data.sqlclient.sni\4.4.0\runtimes\win-x64\native\sni.dll">
+      <PackagePath>sni.dll</PackagePath>
+      <Modified>2017-07-12T11:24:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlite\3.13.0\runtimes\win7-x64\native\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2016-10-18T21:36:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\sqlitepclraw.lib.e_sqlite3.v110_xp\1.1.5\runtimes\win7-x64\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2017-05-01T13:27:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.118\runtimes\win-x64\native\SQLite.Interop.dll">
+      <PackagePath>SQLite.Interop.dll</PackagePath>
+      <Modified>2023-06-10T20:57:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\.nuget\packages\microsoft.maui.controls.compatibility\8.0.7\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

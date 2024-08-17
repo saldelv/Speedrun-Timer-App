@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MauiApp1.Components.Helpers;
+using Microsoft.Extensions.Logging;
 
 namespace MauiApp1
 {
@@ -20,6 +21,8 @@ namespace MauiApp1
     		builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddSingleton(s =>
+                ActivatorUtilities.CreateInstance<SplitDatabase>(s));
 
             return builder.Build();
         }
