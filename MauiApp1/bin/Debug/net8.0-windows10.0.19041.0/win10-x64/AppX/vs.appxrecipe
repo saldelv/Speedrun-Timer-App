@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-17T23:49:09.825</Modified>
+      <Modified>2024-08-19T20:48:23.925</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-17T23:02:27.985</Modified>
+      <Modified>2024-08-19T19:19:16.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.runtimeconfig.json">
       <PackagePath>MauiApp1.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.dll">
       <PackagePath>MauiApp1.dll</PackagePath>
-      <Modified>2024-08-17T23:02:26.859</Modified>
+      <Modified>2024-08-19T20:20:51.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp1.exe</PackagePath>
-      <Modified>2024-08-17T23:02:26.898</Modified>
+      <Modified>2024-08-19T20:20:51.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -767,19 +767,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\MauiApp1.styles.css">
       <PackagePath>wwwroot\MauiApp1.styles.css</PackagePath>
-      <Modified>2024-08-12T19:37:43.776</Modified>
+      <Modified>2024-08-19T20:48:22.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\MauiApp1.bundle.scp.css">
       <PackagePath>wwwroot\MauiApp1.bundle.scp.css</PackagePath>
-      <Modified>2024-08-12T19:37:43.778</Modified>
+      <Modified>2024-08-19T20:48:22.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
-      <Modified>2024-08-12T19:37:12.363</Modified>
+      <Modified>2024-08-19T20:45:49.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
-      <Modified>2024-08-12T19:37:12.367</Modified>
+      <Modified>2024-08-19T20:37:13.845</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Pages\Home.razor.css">
+      <PackagePath>Components\Pages\Home.razor.css</PackagePath>
+      <Modified>2024-08-19T20:48:21.136</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

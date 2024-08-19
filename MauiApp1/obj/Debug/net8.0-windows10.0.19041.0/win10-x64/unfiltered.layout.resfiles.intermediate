@@ -2,6 +2,7 @@ x64\e_sqlite3.dll
 x86\e_sqlite3.dll
 Components\Layout\MainLayout.razor.css
 Components\Layout\NavMenu.razor.css
+Components\Pages\Home.razor.css
 OpenSans-Regular.ttf
 appicon.ico
 appiconLargeTile.scale-100.png

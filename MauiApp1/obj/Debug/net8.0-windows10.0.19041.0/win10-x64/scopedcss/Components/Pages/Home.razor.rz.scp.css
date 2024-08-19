@@ -1,0 +1,22 @@
+.container[b-2m4xtwqkiq] {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.mainTimer[b-2m4xtwqkiq] {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.currentTime[b-2m4xtwqkiq] {
+    color: red;
+}
+
+.buttons[b-2m4xtwqkiq] {
+    border: thick;
+}
