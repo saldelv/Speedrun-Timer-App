@@ -5,6 +5,34 @@
       "PackagePath": "staticwebassets\\MauiApp1.styles.css"
     },
     {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\delete-file-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\delete-file-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\finish-line-103-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\finish-line-103-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\pause-1010-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\pause-1010-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\play-1001-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\play-1001-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\plus-large-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\plus-large-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\restart-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\restart-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\split-v-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\split-v-svgrepo-com.svg"
+    },
+    {
       "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

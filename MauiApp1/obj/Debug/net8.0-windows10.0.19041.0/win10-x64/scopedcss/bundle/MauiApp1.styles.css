@@ -1,8 +1,8 @@
 /* /Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-w4ahko8s4q] {
-    position: relative;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 main[b-w4ahko8s4q] {
@@ -159,7 +159,13 @@ main[b-w4ahko8s4q] {
     color: red;
 }
 
+.loop[b-2m4xtwqkiq] {
+    width: 100%;
+    left: 0;
+}
+
 .allSplits[b-2m4xtwqkiq] {
+    
 }
 
 .split[b-2m4xtwqkiq] {
@@ -179,7 +185,7 @@ main[b-w4ahko8s4q] {
 }
 
 .runTime[b-2m4xtwqkiq] {
-    left: 100%;
+    right: 0;
 }
 
 .buttons[b-2m4xtwqkiq] {
@@ -187,8 +193,13 @@ main[b-w4ahko8s4q] {
     position: sticky;
     float: left;
     bottom: 0;
-    width: 100%;
     background-color: white;
+    width: 100%;
+}
+
+.buttons img[b-2m4xtwqkiq] {
+    height: 30px;
+    width: 30px;
 }
 
 .btnItem[b-2m4xtwqkiq] {

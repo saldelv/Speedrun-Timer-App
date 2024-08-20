@@ -16,7 +16,13 @@
     color: red;
 }
 
+.loop[b-2m4xtwqkiq] {
+    width: 100%;
+    left: 0;
+}
+
 .allSplits[b-2m4xtwqkiq] {
+    
 }
 
 .split[b-2m4xtwqkiq] {
@@ -36,7 +42,7 @@
 }
 
 .runTime[b-2m4xtwqkiq] {
-    left: 100%;
+    right: 0;
 }
 
 .buttons[b-2m4xtwqkiq] {
@@ -44,8 +50,13 @@
     position: sticky;
     float: left;
     bottom: 0;
-    width: 100%;
     background-color: white;
+    width: 100%;
+}
+
+.buttons img[b-2m4xtwqkiq] {
+    height: 30px;
+    width: 30px;
 }
 
 .btnItem[b-2m4xtwqkiq] {

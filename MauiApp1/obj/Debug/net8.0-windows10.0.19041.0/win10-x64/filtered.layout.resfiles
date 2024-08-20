@@ -63,6 +63,13 @@ splashSplashScreen.scale-400.png
 wwwroot\MauiApp1.styles.css
 wwwroot\MauiApp1.bundle.scp.css
 AboutAssets.txt
+wwwroot\Buttons\delete-file-svgrepo-com.svg
+wwwroot\Buttons\finish-line-103-svgrepo-com.svg
+wwwroot\Buttons\pause-1010-svgrepo-com.svg
+wwwroot\Buttons\play-1001-svgrepo-com.svg
+wwwroot\Buttons\plus-large-svgrepo-com.svg
+wwwroot\Buttons\restart-svgrepo-com.svg
+wwwroot\Buttons\split-v-svgrepo-com.svg
 wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map

@@ -5,7 +5,7 @@
         <p> Record: @record</p>
     </div>
 
-    <div loop>
+    <div class="loop">
         @if (splitsList.Count == 0)
         {
             <p><em>No splits</em></p>
@@ -33,12 +33,12 @@
 </div>
 
 <div class="buttons">
-    <button class="btnItem" @onclick="startTimer">Start Timer</button>
-    <button class="btnItem" @onclick="stopTimer">Stop Timer</button>
-    <button class="btnItem" @onclick="restartTimer">Restart Timer</button>
-    <button class="btnItem" @onclick="finish">Finish</button>
-    <button class="btnItem" @onclick="resetRecord">Reset Record</button>
-    <button class="btnItem" @onclick="splitTimer">Split Timer</button>
+    <button class="btnItem" @onclick="startTimer"><img src="Buttons/play-1001-svgrepo-com.svg"/></button>
+    <button class="btnItem" @onclick="stopTimer"><img src="Buttons/pause-1010-svgrepo-com.svg" /></button>
+    <button class="btnItem" @onclick="restartTimer"><img src="Buttons/restart-svgrepo-com.svg" /></button>
+    <button class="btnItem" @onclick="finish"><img src="Buttons/finish-line-103-svgrepo-com.svg" /></button>
+    <button class="btnItem" @onclick="resetRecord"><img src="Buttons/delete-file-svgrepo-com.svg" /></button>
+    <button class="btnItem" @onclick="splitTimer"><img src="Buttons/split-v-svgrepo-com.svg" /></button>
 </div>
 
 <button class="btnAddSplit" @onclick="addSplit">Add New Split</button>

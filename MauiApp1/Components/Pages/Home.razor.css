@@ -16,7 +16,13 @@
     color: red;
 }
 
+.loop {
+    width: 100%;
+    left: 0;
+}
+
 .allSplits {
+    
 }
 
 .split {
@@ -36,7 +42,7 @@
 }
 
 .runTime {
-    left: 100%;
+    right: 0;
 }
 
 .buttons {
@@ -44,8 +50,13 @@
     position: sticky;
     float: left;
     bottom: 0;
-    width: 100%;
     background-color: white;
+    width: 100%;
+}
+
+.buttons img {
+    height: 30px;
+    width: 30px;
 }
 
 .btnItem {

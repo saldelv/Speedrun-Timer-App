@@ -1,8 +1,8 @@
 /* /Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-w4ahko8s4q] {
-    position: relative;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 main[b-w4ahko8s4q] {
@@ -11,6 +11,11 @@ main[b-w4ahko8s4q] {
 
 .sidebar[b-w4ahko8s4q] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    position: sticky;
+    float: left;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
 }
 
 .top-row[b-w4ahko8s4q] {
@@ -47,35 +52,6 @@ main[b-w4ahko8s4q] {
         }
 }
 
-@media (min-width: 641px) {
-    .page[b-w4ahko8s4q] {
-        flex-direction: row;
-    }
-
-    .sidebar[b-w4ahko8s4q] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-w4ahko8s4q] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-        .top-row.auth[b-w4ahko8s4q]  a:first-child {
-            flex: 1;
-            text-align: right;
-            width: 0;
-        }
-
-    .top-row[b-w4ahko8s4q], article[b-w4ahko8s4q] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
 /* /Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-hl3llo7rh3] {
     appearance: none;
@@ -164,18 +140,63 @@ main[b-w4ahko8s4q] {
 .navbar-toggler:checked ~ .nav-scrollable[b-hl3llo7rh3] {
     display: block;
 }
-
-@media (min-width: 641px) {
-    .navbar-toggler[b-hl3llo7rh3] {
-        display: none;
-    }
-
-    .nav-scrollable[b-hl3llo7rh3] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
-        overflow-y: auto;
-    }
-}
 /* /Components/Pages/Home.razor.rz.scp.css */
+.container[b-2m4xtwqkiq] {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTimer[b-2m4xtwqkiq] {
+    text-align: center;
+    position: sticky;
+    float: left;
+    top: 9%;
+    width: 100%;
+    background-color: white;
+}
+
+.currentTime[b-2m4xtwqkiq] {
+    color: red;
+}
+
+.loop[b-2m4xtwqkiq] {
+    width: 100%;
+    left: 0;
+}
+
+.allSplits[b-2m4xtwqkiq] {
+    
+}
+
+.split[b-2m4xtwqkiq] {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+.splitInfo[b-2m4xtwqkiq] {
+    display: flex;
+    flex-direction: row;
+}
+
+.splitName[b-2m4xtwqkiq] {
+    margin-right: 10px;
+}
+
+.runTime[b-2m4xtwqkiq] {
+    right: 0;
+}
+
+.buttons[b-2m4xtwqkiq] {
+    text-align: center;
+    position: sticky;
+    float: left;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.btnItem[b-2m4xtwqkiq] {
+    border-style: solid;
+}
