@@ -1,44 +1,47 @@
 ﻿@page "/"
-
-<div class ="container">
+<div class="container">
     <div class="mainTimer">
         <h1 class="currentTime"> @currentTime</h1>
         <p> Record: @record</p>
     </div>
 
-    @if (splitsList.Count == 0)
-    {
-        <p><em>No splits</em></p>
-    }
-    else
-    {
-        <div class ="allSplits">
-            @foreach (var split in splitsList)
-            {
-                <div class="split">
-                    <h4>@split.Name</h4>
-                    <p>Record: @split.Record</p>
-                    @if (@split.Time != "")
-                    {
-                        <p>@split.Time</p>
-                    }
-                    <button class="btn delete split" @onclick="() => deleteSplit(split.Index)">X</button>
-                </div>
-            }
-        </div>
-    }
-
-    <div class="buttons">
-        <button class="btn start" @onclick="startTimer">Start Timer</button>
-        <button class="btn stop" @onclick="stopTimer">Stop Timer</button>
-        <button class="btn restart" @onclick="restartTimer">Restart Timer</button>
-        <button class="btn finish" @onclick="finish">Finish</button>
-        <button class="btn reset" @onclick="resetRecord">Reset Record</button>
-        <button class="btn split timer" @onclick="splitTimer">Split Timer</button>
+    <div loop>
+        @if (splitsList.Count == 0)
+        {
+            <p><em>No splits</em></p>
+        }
+        else
+        {
+            <div class ="allSplits">
+                @foreach (var split in splitsList)
+                {
+                    <div class="split">
+                        <h6 class="splitName">@split.Name</h6>
+                        <div class="splitInfo">
+                            <p>@split.Record</p>
+                            <button class="btn delete split" @onclick="() => deleteSplit(split.Index)">X</button>
+                            @if (@split.Time != "")
+                            {
+                                <p class="runTime">@split.Time</p>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        }
     </div>
-
-    <button class="btn add split" @onclick="addSplit">Add New Split</button>
 </div>
+
+<div class="buttons">
+    <button class="btnItem" @onclick="startTimer">Start Timer</button>
+    <button class="btnItem" @onclick="stopTimer">Stop Timer</button>
+    <button class="btnItem" @onclick="restartTimer">Restart Timer</button>
+    <button class="btnItem" @onclick="finish">Finish</button>
+    <button class="btnItem" @onclick="resetRecord">Reset Record</button>
+    <button class="btnItem" @onclick="splitTimer">Split Timer</button>
+</div>
+
+<button class="btnAddSplit" @onclick="addSplit">Add New Split</button>
 
 @code {
     private Stopwatch stopwatch = new Stopwatch();

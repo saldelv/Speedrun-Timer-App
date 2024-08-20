@@ -1,22 +1,53 @@
 .container {
-    text-align: center;
-    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainTimer {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
+    text-align: center;
+    position: sticky;
+    float: left;
+    top: 9%;
     width: 100%;
-    margin-top: 40px;
+    background-color: white;
 }
 
 .currentTime {
     color: red;
 }
 
+.allSplits {
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+.splitInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.splitName {
+    margin-right: 10px;
+}
+
+.runTime {
+    left: 100%;
+}
+
 .buttons {
-    border: thick;
+    text-align: center;
+    position: sticky;
+    float: left;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.btnItem {
+    border-style: solid;
 }

@@ -1,22 +1,53 @@
 .container[b-2m4xtwqkiq] {
-    text-align: center;
-    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainTimer[b-2m4xtwqkiq] {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
+    text-align: center;
+    position: sticky;
+    float: left;
+    top: 9%;
     width: 100%;
-    margin-top: 40px;
+    background-color: white;
 }
 
 .currentTime[b-2m4xtwqkiq] {
     color: red;
 }
 
+.allSplits[b-2m4xtwqkiq] {
+}
+
+.split[b-2m4xtwqkiq] {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+.splitInfo[b-2m4xtwqkiq] {
+    display: flex;
+    flex-direction: row;
+}
+
+.splitName[b-2m4xtwqkiq] {
+    margin-right: 10px;
+}
+
+.runTime[b-2m4xtwqkiq] {
+    left: 100%;
+}
+
 .buttons[b-2m4xtwqkiq] {
-    border: thick;
+    text-align: center;
+    position: sticky;
+    float: left;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.btnItem[b-2m4xtwqkiq] {
+    border-style: solid;
 }

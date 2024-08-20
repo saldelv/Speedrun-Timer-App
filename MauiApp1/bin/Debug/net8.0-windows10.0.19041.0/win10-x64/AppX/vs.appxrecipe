@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-19T20:48:23.925</Modified>
+      <Modified>2024-08-20T06:06:31.193</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.dll">
       <PackagePath>MauiApp1.dll</PackagePath>
-      <Modified>2024-08-19T20:20:51.054</Modified>
+      <Modified>2024-08-20T05:53:54.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp1.exe</PackagePath>
-      <Modified>2024-08-19T20:20:51.058</Modified>
+      <Modified>2024-08-20T05:53:54.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -767,15 +767,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\MauiApp1.styles.css">
       <PackagePath>wwwroot\MauiApp1.styles.css</PackagePath>
-      <Modified>2024-08-19T20:48:22.436</Modified>
+      <Modified>2024-08-20T06:06:29.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\MauiApp1.bundle.scp.css">
       <PackagePath>wwwroot\MauiApp1.bundle.scp.css</PackagePath>
-      <Modified>2024-08-19T20:48:22.437</Modified>
+      <Modified>2024-08-20T06:06:29.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
-      <Modified>2024-08-19T20:45:49.203</Modified>
+      <Modified>2024-08-20T05:52:29.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
@@ -783,7 +783,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Pages\Home.razor.css">
       <PackagePath>Components\Pages\Home.razor.css</PackagePath>
-      <Modified>2024-08-19T20:48:21.136</Modified>
+      <Modified>2024-08-20T06:06:28.333</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
