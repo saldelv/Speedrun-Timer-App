@@ -1,6 +1,7 @@
 .container[b-2m4xtwqkiq] {
     display: flex;
     flex-direction: column;
+    font-family: monospace;
 }
 
 .mainTimer[b-2m4xtwqkiq] {
@@ -9,11 +10,10 @@
     float: left;
     top: 9%;
     width: 100%;
-    background-color: white;
+    background: linear-gradient(0deg, rgba(12,21,62,1) 0%, rgba(9,9,121,1) 50%, rgba(0,70,103,1) 100%);
 }
 
 .currentTime[b-2m4xtwqkiq] {
-    color: red;
 }
 
 .loop[b-2m4xtwqkiq] {
@@ -50,7 +50,6 @@
     position: sticky;
     float: left;
     bottom: 0;
-    background-color: white;
     width: 100%;
 }
 

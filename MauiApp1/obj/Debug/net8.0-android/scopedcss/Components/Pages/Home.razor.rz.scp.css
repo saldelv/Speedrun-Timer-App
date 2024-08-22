@@ -1,6 +1,7 @@
 .container[b-2m4xtwqkiq] {
     display: flex;
     flex-direction: column;
+    font-family: monospace;
 }
 
 .mainTimer[b-2m4xtwqkiq] {
@@ -13,7 +14,6 @@
 }
 
 .currentTime[b-2m4xtwqkiq] {
-    color: red;
 }
 
 .loop[b-2m4xtwqkiq] {
@@ -50,8 +50,13 @@
     position: sticky;
     float: left;
     bottom: 0;
-    width: 100%;
     background-color: white;
+    width: 100%;
+}
+
+.buttons img[b-2m4xtwqkiq] {
+    height: 30px;
+    width: 30px;
 }
 
 .btnItem[b-2m4xtwqkiq] {

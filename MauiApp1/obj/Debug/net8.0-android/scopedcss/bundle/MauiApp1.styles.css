@@ -144,6 +144,7 @@ main[b-w4ahko8s4q] {
 .container[b-2m4xtwqkiq] {
     display: flex;
     flex-direction: column;
+    font-family: monospace;
 }
 
 .mainTimer[b-2m4xtwqkiq] {
@@ -156,7 +157,6 @@ main[b-w4ahko8s4q] {
 }
 
 .currentTime[b-2m4xtwqkiq] {
-    color: red;
 }
 
 .loop[b-2m4xtwqkiq] {
@@ -193,8 +193,13 @@ main[b-w4ahko8s4q] {
     position: sticky;
     float: left;
     bottom: 0;
-    width: 100%;
     background-color: white;
+    width: 100%;
+}
+
+.buttons img[b-2m4xtwqkiq] {
+    height: 30px;
+    width: 30px;
 }
 
 .btnItem[b-2m4xtwqkiq] {
