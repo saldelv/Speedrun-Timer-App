@@ -12,9 +12,6 @@
     width: 100%;
 }
 
-.currentTime {
-}
-
 .loop {
     width: 100%;
     height: calc(100vh - 200px);
@@ -26,10 +23,6 @@
 
 .loop::-webkit-scrollbar {
     display: none;
-}
-
-.allSplits {
-    
 }
 
 .split {
@@ -46,8 +39,26 @@
 }
 
 .splitName {
-    margin-right: 10px;
     width: 150px;
+}
+
+.btnDeleteSplit {
+    margin-left: 10px;
+    background: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+.btnDeleteSplit img{
+    width: 25px;
+    height: 25px;
+    margin: -5px;
+}
+
+.pad {
+    width: 100%;
 }
 
 .runTime {

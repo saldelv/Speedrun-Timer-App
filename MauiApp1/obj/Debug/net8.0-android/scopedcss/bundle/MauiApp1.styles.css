@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    background: linear-gradient(0deg, rgba(12,21,62,1) 0%, rgba(9,9,121,1) 50%, rgba(0,70,103,1) 100%);
+    color: white;
 }
 
 main[b-w4ahko8s4q] {
@@ -10,7 +12,7 @@ main[b-w4ahko8s4q] {
 }
 
 .sidebar[b-w4ahko8s4q] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background: rgb(0, 0, 20);
     position: sticky;
     float: left;
     width: 100%;
@@ -153,7 +155,6 @@ main[b-w4ahko8s4q] {
     float: left;
     top: 9%;
     width: 100%;
-    background-color: white;
 }
 
 .currentTime[b-2m4xtwqkiq] {
@@ -161,7 +162,15 @@ main[b-w4ahko8s4q] {
 
 .loop[b-2m4xtwqkiq] {
     width: 100%;
+    height: calc(100vh - 200px);
     left: 0;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.loop[b-2m4xtwqkiq]::-webkit-scrollbar {
+    display: none;
 }
 
 .allSplits[b-2m4xtwqkiq] {
@@ -178,14 +187,26 @@ main[b-w4ahko8s4q] {
 .splitInfo[b-2m4xtwqkiq] {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .splitName[b-2m4xtwqkiq] {
     margin-right: 10px;
+    width: 150px;
+}
+
+.btnDeleteSplit[b-2m4xtwqkiq] {
+    width: 25px;
+    height: 25px;
+}
+
+.btnDeleteSplit img[b-2m4xtwqkiq]{
+    width: 25px;
+    height: 25px;
 }
 
 .runTime[b-2m4xtwqkiq] {
-    right: 0;
+    right: 10%;
 }
 
 .buttons[b-2m4xtwqkiq] {
@@ -193,7 +214,6 @@ main[b-w4ahko8s4q] {
     position: sticky;
     float: left;
     bottom: 0;
-    background-color: white;
     width: 100%;
 }
 

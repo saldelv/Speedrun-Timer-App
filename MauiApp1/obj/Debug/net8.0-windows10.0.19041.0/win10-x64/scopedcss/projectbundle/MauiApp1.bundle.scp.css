@@ -157,9 +157,6 @@ main[b-w4ahko8s4q] {
     width: 100%;
 }
 
-.currentTime[b-2m4xtwqkiq] {
-}
-
 .loop[b-2m4xtwqkiq] {
     width: 100%;
     height: calc(100vh - 200px);
@@ -171,10 +168,6 @@ main[b-w4ahko8s4q] {
 
 .loop[b-2m4xtwqkiq]::-webkit-scrollbar {
     display: none;
-}
-
-.allSplits[b-2m4xtwqkiq] {
-    
 }
 
 .split[b-2m4xtwqkiq] {
@@ -191,8 +184,26 @@ main[b-w4ahko8s4q] {
 }
 
 .splitName[b-2m4xtwqkiq] {
-    margin-right: 10px;
     width: 150px;
+}
+
+.btnDeleteSplit[b-2m4xtwqkiq] {
+    margin-left: 10px;
+    background: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+.btnDeleteSplit img[b-2m4xtwqkiq]{
+    width: 25px;
+    height: 25px;
+    margin: -5px;
+}
+
+.pad[b-2m4xtwqkiq] {
+    width: 100%;
 }
 
 .runTime[b-2m4xtwqkiq] {

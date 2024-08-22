@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\MauiApp1.styles.css"
     },
     {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\close-circle-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\close-circle-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\close-ring-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\Buttons\\close-ring-svgrepo-com.svg"
+    },
+    {
       "Id": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\delete-file-svgrepo-com.svg",
       "PackagePath": "staticwebassets\\Buttons\\delete-file-svgrepo-com.svg"
     },
