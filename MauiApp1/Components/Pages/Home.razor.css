@@ -42,14 +42,16 @@
 .splitInfo {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .splitName {
     margin-right: 10px;
+    width: 150px;
 }
 
 .runTime {
-    right: 0;
+    right: 10%;
 }
 
 .buttons {

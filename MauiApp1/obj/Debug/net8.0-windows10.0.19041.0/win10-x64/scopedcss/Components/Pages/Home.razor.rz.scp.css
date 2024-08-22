@@ -42,14 +42,16 @@
 .splitInfo[b-2m4xtwqkiq] {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .splitName[b-2m4xtwqkiq] {
     margin-right: 10px;
+    width: 150px;
 }
 
 .runTime[b-2m4xtwqkiq] {
-    right: 0;
+    right: 10%;
 }
 
 .buttons[b-2m4xtwqkiq] {
