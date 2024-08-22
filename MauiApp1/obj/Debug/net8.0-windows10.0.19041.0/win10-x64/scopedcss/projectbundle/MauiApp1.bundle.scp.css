@@ -12,7 +12,7 @@ main[b-w4ahko8s4q] {
 }
 
 .sidebar[b-w4ahko8s4q] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background: rgb(0, 0, 20);
     position: sticky;
     float: left;
     width: 100%;
@@ -155,7 +155,6 @@ main[b-w4ahko8s4q] {
     float: left;
     top: 9%;
     width: 100%;
-    background: linear-gradient(0deg, rgba(12,21,62,1) 0%, rgba(9,9,121,1) 50%, rgba(0,70,103,1) 100%);
 }
 
 .currentTime[b-2m4xtwqkiq] {
@@ -163,7 +162,15 @@ main[b-w4ahko8s4q] {
 
 .loop[b-2m4xtwqkiq] {
     width: 100%;
+    height: calc(100vh - 200px);
     left: 0;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.loop[b-2m4xtwqkiq]::-webkit-scrollbar {
+    display: none;
 }
 
 .allSplits[b-2m4xtwqkiq] {
