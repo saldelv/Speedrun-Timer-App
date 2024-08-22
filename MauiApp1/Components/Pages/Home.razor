@@ -79,15 +79,17 @@
         stopwatch.Reset();
         currentTime = "00:00:00:00";
         nextSplit = 0;
+        deleteDatabase();
         for (int i = 0; i < splitsList.Count; i++)
         {
             splitsList[i].Time = "";
+            saveDatabase(splitsList[i]);
         }
     }
 
     private void finish()
     {
-        if (record == "None" || TimeSpan.ParseExact(currentTime, "hh\\:mm\\:ss\\.ff", System.Globalization.CultureInfo.InvariantCulture) < TimeSpan.ParseExact(record, "hh\\:mm\\:ss\\.fff", System.Globalization.CultureInfo.InvariantCulture))
+        if (record == "None" || TimeSpan.ParseExact(currentTime, "hh\\:mm\\:ss\\.ff", System.Globalization.CultureInfo.InvariantCulture) < TimeSpan.ParseExact(record, "hh\\:mm\\:ss\\.ff", System.Globalization.CultureInfo.InvariantCulture))
         {
             record = currentTime;
             Preferences.Default.Set("record1", record);
@@ -132,7 +134,7 @@
             string time = stopwatch.Elapsed.ToString(@"hh\:mm\:ss\.ff");
             splitsList[nextSplit].Time = time;        
 
-            if (splitsList[nextSplit].Record == "None" || TimeSpan.ParseExact(time, "hh\\:mm\\:ss\\.ff", System.Globalization.CultureInfo.InvariantCulture) < TimeSpan.ParseExact(splitsList[nextSplit].Record, "hh\\:mm\\:ss\\.fff", System.Globalization.CultureInfo.InvariantCulture))
+            if (splitsList[nextSplit].Record == "None" || TimeSpan.ParseExact(time, "hh\\:mm\\:ss\\.ff", System.Globalization.CultureInfo.InvariantCulture) < TimeSpan.ParseExact(splitsList[nextSplit].Record, "hh\\:mm\\:ss\\.ff", System.Globalization.CultureInfo.InvariantCulture))
             {
                 splitsList[nextSplit].Record = time;
             }
