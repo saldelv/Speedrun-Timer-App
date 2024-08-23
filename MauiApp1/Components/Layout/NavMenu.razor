@@ -7,13 +7,13 @@
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <button class="addTimer" @onclick="addTimer">+</button>
+    <button class="addRun" @onclick="addRun">+</button>
     <nav class="flex-column">
-        @foreach (var timer in timersList)
+        @foreach (var run in runsList)
         {
             <div class="nav-item px-3">
                 <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                    <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> @timer.Name
+                    <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> @run.Name
                 </NavLink>
             </div>
         }
@@ -21,19 +21,19 @@
 </div>
 
 @code {
-    private List<Timer> timersList = new List<Timer>();
+    private List<Run> runsList = new List<Run>();
 
-    private async void addTimer()
+    private async void addRun()
     {
-        string name = await App.Current.MainPage.DisplayPromptAsync("New Timer", "Enter name:");
+        string name = await App.Current.MainPage.DisplayPromptAsync("New Run", "Enter name:");
 
         if (name != null)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                name = "New Timer";
+                name = "New Run";
             }
-            Timer timer = new Timer
+            Run run = new Run
             {
                 Index = 0,
                 Record = "",
@@ -41,13 +41,13 @@
                 Name = name
             };
 
-            timersList.Add(timer);
+            runsList.Add(run);
             await InvokeAsync(StateHasChanged);
         }
     }
 
-    [Table("timer")]
-    public class Timer
+    [Table("run")]
+    public class Run
     {
         [PrimaryKey]
         [Column("index")]

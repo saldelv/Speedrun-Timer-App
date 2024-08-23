@@ -193,7 +193,7 @@
 
     private void saveDatabase(Split split)
     {
-        App.SplitDatabase.Add(split);
+        App.SplitDatabase.AddSplit(split);
     }
 
     private static List<Split> loadDatabase()
@@ -203,7 +203,7 @@
 
     private void deleteDatabase()
     {
-        App.SplitDatabase.Delete();
+        App.SplitDatabase.Delete(0);
 
     }
 }
