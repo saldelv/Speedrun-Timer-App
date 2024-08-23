@@ -51,6 +51,7 @@
     private string currentTime = "00:00:00:00";
     private string record = Preferences.Default.Get<string>("record1", "None");
     private System.Timers.Timer aTimer = new System.Timers.Timer(10);
+    private bool running = false;
 
 
     private List<Split> splitsList = loadDatabase();
@@ -59,6 +60,8 @@
 
     private void startTimer()
     {
+        running = true;
+
         aTimer.Elapsed += new System.Timers.ElapsedEventHandler(timerElapsed);
         aTimer.AutoReset = true;
         aTimer.Enabled = true;
@@ -75,10 +78,13 @@
     private void stopTimer()
     {
         stopwatch.Stop();
+        running = false;
     }
 
     private void restartTimer(bool newRecord)
     {
+        running = false;
+
         stopwatch.Reset();
         currentTime = "00:00:00:00";
         nextSplit = 0;
@@ -102,6 +108,8 @@
 
     private void finish()
     {
+        running = false;
+
         if (record == "None" || TimeSpan.ParseExact(currentTime, "hh\\:mm\\:ss\\.ff", System.Globalization.CultureInfo.InvariantCulture) < TimeSpan.ParseExact(record, "hh\\:mm\\:ss\\.ff", System.Globalization.CultureInfo.InvariantCulture))
         {
             record = currentTime;
@@ -146,7 +154,7 @@
 
     private void splitTimer()
     {
-        if (nextSplit < splitsList.Count)
+        if (nextSplit < splitsList.Count && running == true)
         {
             string time = stopwatch.Elapsed.ToString(@"hh\:mm\:ss\.ff");
             splitsList[nextSplit].Time = time;        

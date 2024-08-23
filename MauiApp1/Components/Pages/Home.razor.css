@@ -36,7 +36,7 @@
 
 .loop {
     width: 100%;
-    height: calc(100vh - 193px);
+    height: calc(100vh - 192.5px);
     left: 0;
     overflow-y: auto;
     -ms-overflow-style: none;
