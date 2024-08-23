@@ -141,6 +141,9 @@ main[b-w4ahko8s4q] {
 
 .navbar-toggler:checked ~ .nav-scrollable[b-hl3llo7rh3] {
     display: block;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,11,255);
 }
 /* /Components/Pages/Home.razor.rz.scp.css */
 .container[b-2m4xtwqkiq] {
@@ -150,16 +153,38 @@ main[b-w4ahko8s4q] {
 }
 
 .mainTimer[b-2m4xtwqkiq] {
-    text-align: center;
     position: sticky;
     float: left;
     top: 9%;
     width: 100%;
+    height: 81px;
+    display: flex;
+    flex-direction: row;
+}
+
+.timerText[b-2m4xtwqkiq] {
+    text-align: center;
+    width: 100%;
+}
+
+.addBtn[b-2m4xtwqkiq] {
+    background: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.addBtn img[b-2m4xtwqkiq] {
+    width: 30px;
+    height: 30px;
+    margin: -6px;
+    margin-bottom: -2px;
 }
 
 .loop[b-2m4xtwqkiq] {
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 193px);
     left: 0;
     overflow-y: auto;
     -ms-overflow-style: none;
@@ -217,7 +242,7 @@ main[b-w4ahko8s4q] {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    border-top: 2px solid rgb(163, 163, 163);
 }
 
 .buttons img[b-2m4xtwqkiq] {

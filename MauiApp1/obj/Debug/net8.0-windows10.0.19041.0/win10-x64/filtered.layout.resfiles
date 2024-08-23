@@ -63,6 +63,7 @@ splashSplashScreen.scale-400.png
 wwwroot\MauiApp1.styles.css
 wwwroot\MauiApp1.bundle.scp.css
 AboutAssets.txt
+wwwroot\Buttons\add-circle-svgrepo-com.svg
 wwwroot\Buttons\close-circle-svgrepo-com.svg
 wwwroot\Buttons\close-ring-svgrepo-com.svg
 wwwroot\Buttons\delete-file-svgrepo-com.svg

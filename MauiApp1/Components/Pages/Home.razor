@@ -1,8 +1,11 @@
 ﻿@page "/"
 <div class="container">
     <div class="mainTimer">
-        <h1 class="currentTime"> @currentTime</h1>
-        <p> Record: @record</p>
+        <div class="timerText">
+            <h1 class="currentTime"> @currentTime</h1>
+            <p> Record: @record</p>
+        </div>
+        <button class="addBtn" @onclick="addSplit"><img src="Buttons/add-circle-svgrepo-com.svg" /></button>
     </div>
 
     <div class="loop">
@@ -42,7 +45,6 @@
     <button class="btnItem" @onclick="splitTimer"><img src="Buttons/split-v-svgrepo-com.svg" /></button>
 </div>
 
-<button class="btnAddSplit" @onclick="addSplit">Add New Split</button>
 
 @code {
     private Stopwatch stopwatch = new Stopwatch();

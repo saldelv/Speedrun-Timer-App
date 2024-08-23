@@ -84,4 +84,7 @@
 
 .navbar-toggler:checked ~ .nav-scrollable[b-hl3llo7rh3] {
     display: block;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,11,255);
 }

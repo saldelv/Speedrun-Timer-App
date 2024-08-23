@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EbgzZV1sqRG4dqkRbpvNCHn0pTUyCJ3Yd1aq1gpLRT0=",
+  "Hash": "Vi/1ZFj9sUoM8ODyHZa4wtZRh2fkMp/aAyZ050HrzS0=",
   "Source": "MauiApp1",
   "BasePath": "/",
   "Mode": "Root",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\MauiApp1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\add-circle-svgrepo-com.svg",
+      "SourceId": "MauiApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Buttons/add-circle-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Buttons\\add-circle-svgrepo-com.svg"
     },
     {
       "Identity": "C:\\Users\\salva\\source\\repos\\MauiApp1\\MauiApp1\\wwwroot\\Buttons\\close-circle-svgrepo-com.svg",
