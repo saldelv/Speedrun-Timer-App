@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-22T06:12:42.113</Modified>
+      <Modified>2024-08-23T03:47:25.355</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -803,11 +803,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\MauiApp1.styles.css">
       <PackagePath>wwwroot\MauiApp1.styles.css</PackagePath>
-      <Modified>2024-08-22T06:12:40.621</Modified>
+      <Modified>2024-08-23T03:47:23.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\MauiApp1.bundle.scp.css">
       <PackagePath>wwwroot\MauiApp1.bundle.scp.css</PackagePath>
-      <Modified>2024-08-22T06:12:40.622</Modified>
+      <Modified>2024-08-23T03:47:23.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
@@ -819,7 +819,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Pages\Home.razor.css">
       <PackagePath>Components\Pages\Home.razor.css</PackagePath>
-      <Modified>2024-08-22T06:12:39.216</Modified>
+      <Modified>2024-08-23T03:47:22.157</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -211,11 +211,13 @@ main[b-w4ahko8s4q] {
 }
 
 .buttons[b-2m4xtwqkiq] {
-    text-align: center;
     position: sticky;
     float: left;
     bottom: 0;
     width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .buttons img[b-2m4xtwqkiq] {
@@ -223,6 +225,10 @@ main[b-w4ahko8s4q] {
     width: 30px;
 }
 
+.buttons button[b-2m4xtwqkiq] {
+    border: 2px solid transparent !important;
+}
+
 .btnItem[b-2m4xtwqkiq] {
-    border-style: solid;
+    background: none;
 }
