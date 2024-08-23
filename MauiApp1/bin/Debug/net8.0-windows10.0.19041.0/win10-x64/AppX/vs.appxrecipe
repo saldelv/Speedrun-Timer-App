@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-23T03:47:25.355</Modified>
+      <Modified>2024-08-23T03:54:30.479</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -63,19 +63,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\wwwroot\Buttons\delete-file-svgrepo-com.svg">
       <PackagePath>wwwroot\Buttons\delete-file-svgrepo-com.svg</PackagePath>
-      <Modified>2024-08-20T19:43:37.446</Modified>
+      <Modified>2024-08-23T03:50:55.523</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\wwwroot\Buttons\finish-line-103-svgrepo-com.svg">
       <PackagePath>wwwroot\Buttons\finish-line-103-svgrepo-com.svg</PackagePath>
-      <Modified>2024-08-20T19:42:39.566</Modified>
+      <Modified>2024-08-23T03:50:40.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\wwwroot\Buttons\pause-1010-svgrepo-com.svg">
       <PackagePath>wwwroot\Buttons\pause-1010-svgrepo-com.svg</PackagePath>
-      <Modified>2024-08-20T19:41:55.842</Modified>
+      <Modified>2024-08-23T03:49:50.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\wwwroot\Buttons\play-1001-svgrepo-com.svg">
       <PackagePath>wwwroot\Buttons\play-1001-svgrepo-com.svg</PackagePath>
-      <Modified>2024-08-20T19:41:37.395</Modified>
+      <Modified>2024-08-23T03:49:20.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\wwwroot\Buttons\plus-large-svgrepo-com.svg">
       <PackagePath>wwwroot\Buttons\plus-large-svgrepo-com.svg</PackagePath>
@@ -83,11 +83,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\wwwroot\Buttons\restart-svgrepo-com.svg">
       <PackagePath>wwwroot\Buttons\restart-svgrepo-com.svg</PackagePath>
-      <Modified>2024-08-20T19:42:11.005</Modified>
+      <Modified>2024-08-23T03:50:11.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\wwwroot\Buttons\split-v-svgrepo-com.svg">
       <PackagePath>wwwroot\Buttons\split-v-svgrepo-com.svg</PackagePath>
-      <Modified>2024-08-20T19:44:10.928</Modified>
+      <Modified>2024-08-23T03:51:09.914</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
@@ -803,11 +803,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\MauiApp1.styles.css">
       <PackagePath>wwwroot\MauiApp1.styles.css</PackagePath>
-      <Modified>2024-08-23T03:47:23.860</Modified>
+      <Modified>2024-08-23T03:54:29.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\MauiApp1.bundle.scp.css">
       <PackagePath>wwwroot\MauiApp1.bundle.scp.css</PackagePath>
-      <Modified>2024-08-23T03:47:23.861</Modified>
+      <Modified>2024-08-23T03:54:29.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
@@ -819,7 +819,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salva\source\repos\MauiApp1\MauiApp1\Components\Pages\Home.razor.css">
       <PackagePath>Components\Pages\Home.razor.css</PackagePath>
-      <Modified>2024-08-23T03:47:22.157</Modified>
+      <Modified>2024-08-23T03:54:27.832</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
