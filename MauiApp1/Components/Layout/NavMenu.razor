@@ -7,7 +7,7 @@
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <button class="addRun" @onclick="addRun">+</button>
+    @* <button class="addRun" @onclick="addRun">+</button> *@
     <nav class="flex-column">
         @foreach (var run in runsList)
         {
@@ -21,7 +21,7 @@
 </div>
 
 @code {
-    private List<Run> runsList = new List<Run>();
+    private List<Run> runsList = App.SplitDatabase.GetRuns();
 
     private async void addRun()
     {
@@ -42,6 +42,7 @@
             };
 
             runsList.Add(run);
+            App.SplitDatabase.AddRuns(run);
             await InvokeAsync(StateHasChanged);
         }
     }

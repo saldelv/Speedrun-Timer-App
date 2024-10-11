@@ -126,6 +126,14 @@
     {
         record = "None";
         Preferences.Default.Set("record1", record);
+
+        deleteDatabase();
+        for (int i = 0; i < splitsList.Count; i++)
+        {
+            splitsList[i].Record = "None";
+            saveDatabase(splitsList[i]);
+        }
+
     }
 
     private async void addSplit()
@@ -203,7 +211,7 @@
 
     private void deleteDatabase()
     {
-        App.SplitDatabase.Delete(0);
+        App.SplitDatabase.Delete();
 
     }
 }

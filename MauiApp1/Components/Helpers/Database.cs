@@ -8,35 +8,30 @@ namespace MauiApp1.Components.Helpers
         string filename = "local.db3";
         private SQLiteConnection conn;
 
-        public void Init(int type)
+        public void Init()
         {
             string path = Path.Combine(FileSystem.Current.AppDataDirectory, filename);
             conn = new SQLiteConnection(path);
-            if (type == 0)
-            {
-                conn.CreateTable<Split>();
-            }
-            else
-            {
-                conn.CreateTable<Run>();
-            }
+
+            conn.CreateTable<Split>();
+            conn.CreateTable<Run>();
         }
 
         public List<Split> GetSplits()
         {
-            Init(0);
+            Init();
             return conn.Table<Split>().ToList();
         }
 
         public void AddSplit(Split split)
         {
-            Init(0);
+            Init();
             conn.Insert(split);
         }
 
         public List<Run> GetRuns()
         {
-            Init(1);
+            Init();
             List<Run> l = conn.Table<Run>().ToList();
             if (!l.Any())
             {
@@ -55,17 +50,14 @@ namespace MauiApp1.Components.Helpers
 
         public void AddRuns(Run run)
         {
-            Init(1);
+            Init();
             conn.Insert(run);
         }
 
-        public void Delete(int type)
+        public void Delete()
         {
-            Init(type);
-            if (type == 0)
-            {
-                conn.DeleteAll<Split>();
-            }
+            Init();
+            conn.DeleteAll<Split>();
         }
     }
 }
