@@ -1,0 +1,111 @@
+.container[b-2m4xtwqkiq] {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+.mainTimer[b-2m4xtwqkiq] {
+    position: sticky;
+    float: left;
+    top: 9%;
+    width: 100%;
+    height: 81px;
+    display: flex;
+    flex-direction: row;
+}
+
+.timerText[b-2m4xtwqkiq] {
+    text-align: center;
+    width: 100%;
+}
+
+.addBtn[b-2m4xtwqkiq] {
+    background: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.addBtn img[b-2m4xtwqkiq] {
+    width: 30px;
+    height: 30px;
+    margin: -6px;
+    margin-bottom: -2px;
+}
+
+.loop[b-2m4xtwqkiq] {
+    width: 100%;
+    height: calc(100vh - 192.5px);
+    left: 0;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.loop[b-2m4xtwqkiq]::-webkit-scrollbar {
+    display: none;
+}
+
+.split[b-2m4xtwqkiq] {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+.splitInfo[b-2m4xtwqkiq] {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.splitName[b-2m4xtwqkiq] {
+    width: 150px;
+}
+
+.btnDeleteSplit[b-2m4xtwqkiq] {
+    margin-left: 10px;
+    background: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+.btnDeleteSplit img[b-2m4xtwqkiq]{
+    width: 25px;
+    height: 25px;
+    margin: -5px;
+}
+
+.pad[b-2m4xtwqkiq] {
+    width: 100%;
+}
+
+.runTime[b-2m4xtwqkiq] {
+    right: 10%;
+}
+
+.buttons[b-2m4xtwqkiq] {
+    position: sticky;
+    float: left;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid rgb(163, 163, 163);
+}
+
+.buttons img[b-2m4xtwqkiq] {
+    height: 30px;
+    width: 30px;
+}
+
+.buttons button[b-2m4xtwqkiq] {
+    border: 2px solid transparent !important;
+}
+
+.btnItem[b-2m4xtwqkiq] {
+    background: none;
+}
