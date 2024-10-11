@@ -1,5 +1,8 @@
-# Speedrun-Timer-App
-Mobile app developed in .NET MAUI that allows you to time yourself playing a game as fast as possible. Includes features adding and saving multiple splits, and saving records for the overall times and splits.
+# PocketSplit
+Mobile app developed in .NET MAUI that is made as an improved smartphone stopwatch app. Includes features for adding and saving multiple splits, and saving records for the overall times and splits.
 
 # To do
-* Add feature for creating and saving multiple different overall speedrun timers
+* Add feature for creating and saving multiple different overall presets
+
+# Screenshot
+![image](https://github.com/user-attachments/assets/2ba111c6-851b-40af-b416-61576696c1e9)
